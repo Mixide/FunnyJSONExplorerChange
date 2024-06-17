@@ -12,7 +12,7 @@ class RectStrategy(Strategy):#具体产品1
     
     def setPrefix(self,entry):
         super().setPrefix(entry)
-        for parent in entry.parents:
+        for _ in entry.parents:
             if entry.istail:
                 self.prefix += '└──'
             else:

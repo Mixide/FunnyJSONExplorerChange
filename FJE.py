@@ -8,6 +8,9 @@ class FJE():
         self.analyzer = Analyzer()
         self.strategy = strategy
 
+    def setStrategy(self,strategy):
+        self.strategy = strategy
+        
     def _loadfile(self,json_path):
         self.json_path = json_path
     
