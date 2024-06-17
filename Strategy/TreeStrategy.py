@@ -1,6 +1,6 @@
 from .strategy import Strategy
 
-class TreeStrategy(Strategy):#具体产品2
+class TreeStrategy(Strategy):#具体策略2
     def __init__(self, icon_path):
         super().__init__(icon_path)
 

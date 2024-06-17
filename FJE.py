@@ -32,13 +32,13 @@ class FJE():
         print(self.strategy.execute(entry))
 
 
-factory_dic = {#工厂哈希表
+strategy_dic = {#策略哈希表
     'TREE': TreeStrategy,
     'RECT': RectStrategy
 }
-def selectStrategy(style,icon_path):#生成具体工厂
+def selectStrategy(style,icon_path):#选择具体策略
     key = style.upper()
-    return factory_dic[key](icon_path)
+    return strategy_dic[key](icon_path)
 
 def main():
     parser = argparse.ArgumentParser(description='Chose the style and icon and input the file path')

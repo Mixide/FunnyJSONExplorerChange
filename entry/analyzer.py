@@ -1,6 +1,6 @@
 import json
 from .entryBuilder import EntryBuilder
-class Analyzer:#json结构分析器，被FJE组合使用
+class Analyzer:#json结构分析器，提供迭代器接口
     def clean(self):
         self.list = []
         self.idx = 0

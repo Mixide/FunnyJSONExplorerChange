@@ -1,7 +1,7 @@
 from .strategy import Strategy
 import os
 
-class RectStrategy(Strategy):#具体产品1
+class RectStrategy(Strategy):#具体策略1
     def __init__(self, icon_path):
         super().__init__(icon_path)
         try:
